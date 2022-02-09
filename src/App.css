@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heroDivStyle {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  min-height: 100vh;
+  background-size: cover;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  position: relative;
+  font-size: 30px;
+  left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.emailTitle {
+  position: relative;
+  bottom: -15px;
+  left: 10px;
+}
+
+.nameTitle {
+  position: relative;
+  bottom: -70px;
+  left: 10px;
+}
+
+.name {
+  width: 85%;
+  left: 75px;
+  top: 10px;
+}
+
+.email {
+  width: 85%;
+  left: 75px;
+  top: -40px;
+}
+
+.btnSubmit {
+  left: 385px;
+  bottom: 20px;
+}
+
+.btnCancel {
+  left: 350px;
+  bottom: 20px;
 }
