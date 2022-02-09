@@ -9,7 +9,6 @@ import { DataGrid } from "@mui/x-data-grid";
 function DataTable() {
  
   const [fetchData, setFetchData] = useState(null);
-  //const [removeData, setRemoveData] = useState(null);
   
   // API user list:
   const apiURL = "https://my-json-server.typicode.com/karolkproexe/jsonplaceholderdb/data";
@@ -46,21 +45,7 @@ function DataTable() {
       width: 150,
       disableClickEventBubbling: true,
       renderCell: () => {
-     //       const onClick = () => {
-       //       const api: GridApi = params.api;
-         //     const fields = api
-           //     .getAllColumns()
-           //     .map((c) => c.field)
-           //     .filter((c) => c !== "__check__" && !!c);
-           //   const thisRow: Record<string, GridCellValue> = {};
-
-           //   fields.forEach((f) => {
-             //   thisRow[f] = params.getValue(f);
-             // });
-
-              // set to state rather then alert
-            //  return alert(JSON.stringify(api, null, 4));
-        // };
+        
         return (
           <EditAlert />
         );
@@ -73,26 +58,7 @@ function DataTable() {
       width: 130,
       disableClickEventBubbling: true,
       renderCell: () => {
-          //setRemoveData(fetchData);
-
-          //  <RequiredRule message={'Material type name is required.'} />  
-           // const onClick = () => {
-            
-
-             // const arrayCopy = this.state.data.filter((row) => row.id !== params);
-
-            
-           // setRemoveData(params.data.filter((row) => row.id !== params.id));
-            // console.log("ID: ", fetchData[params.id - 1]);
-           // console.log("Remove Data: ", removeData);
-          //   for (let i = 0; i < removeData.length; i++) {
-          
-           //  if (fetchData[params.id - 1] === removeData[i]) {
-              //set to state rather then alerts
-           //   return alert(JSON.stringify(params.id, null, 4));
-           // }
-         // }
-        //   };
+        
         return (
           <DeleteAlert />
         );
